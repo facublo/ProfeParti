@@ -3,203 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facundo | Preparación de Ingreso Universitario - Ingeniería</title>
+    <title>Tutoria Preuniversitaria | Ingreso a ingenieria</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     
     <style>
         :root {
-            --color-principal: #1ABC9C; /* Verde/Cian fresco y energizante */
-            --color-acento: #34495E; /* Gris oscuro para seriedad */
-            --color-fondo: #f9f9f9; /* Fondo muy claro */
+            --color-principal: #004AAD; /* Azul serio */
+            --color-acento: #FF7F50; /* Naranja para CTA */
+            --color-fondo: #f4f4f9;
             --color-texto: #333;
         }
 
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             color: var(--color-texto);
             background-color: white;
             line-height: 1.6;
-            transition: background-color 0.5s;
         }
 
         header {
-            background-color: white; /* Header blanco minimalista */
+            background-color: var(--color-principal);
+            color: white;
             padding: 1rem 5%;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-
-        nav {
-            display: flex;
-            justify-content: flex-end;
-            gap: 25px;
+            text-align: center;
         }
 
         nav a {
-            color: var(--color-acento);
+            color: white;
+            margin: 0 15px;
             text-decoration: none;
-            font-weight: 500;
-            padding: 5px 0;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: var(--color-principal);
+            font-weight: bold;
         }
 
         .container {
             width: 90%;
-            max-width: 1000px;
+            max-width: 1200px;
             margin: auto;
             padding: 20px 0;
         }
 
         section {
-            padding: 60px 0;
-            border-bottom: 1px solid #eee;
+            padding: 40px 0;
+            border-bottom: 1px solid #ddd;
         }
 
         h2 {
             text-align: center;
-            color: var(--color-acento);
-            font-size: 2.2em;
-            margin-bottom: 40px;
-            font-weight: 300;
+            color: var(--color-principal);
+            margin-bottom: 30px;
         }
 
-        /* Hero Section (Fresco y abierto) */
+        /* Hero Section */
         #hero {
-            background-color: var(--color-fondo);
+            background: linear-gradient(rgba(0, 74, 173, 0.8), rgba(0, 74, 173, 0.8)), url('ruta/a/tu/imagen-fondo-ingenieria.jpg') no-repeat center center/cover;
+            color: white;
             text-align: center;
             padding: 100px 20px;
         }
 
         #hero h1 {
-            font-size: 3em;
-            color: var(--color-principal);
-            margin-bottom: 5px;
-            font-weight: 700;
+            font-size: 2.8em;
+            margin-bottom: 10px;
         }
 
         .cta-button {
             display: inline-block;
-            background-color: var(--color-principal);
+            background-color: var(--color-acento);
             color: white;
-            padding: 12px 25px;
+            padding: 15px 30px;
             text-decoration: none;
-            border-radius: 50px; /* Botones más suaves y modernos */
-            font-size: 1.1em;
+            border-radius: 5px;
+            font-size: 1.2em;
             margin-top: 20px;
-            transition: background-color 0.3s, transform 0.2s;
-            box-shadow: 0 4px 6px rgba(0, 150, 136, 0.2);
+            transition: background-color 0.3s;
         }
         
         .cta-button:hover {
-            background-color: #16A085;
-            transform: translateY(-2px);
+            background-color: #e56b40;
         }
 
-        /* Seccion "Sobre Mí" */
-        #experiencia {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-            padding: 60px 0;
-        }
-
-        .foto-estudio {
-            flex: 1;
-        }
-        
-        .foto-estudio img {
-            width: 100%;
-            border-radius: 8px; /* Bordes suaves */
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-
-        .texto-experiencia {
-            flex: 2;
-            text-align: left;
-        }
-        
-        .texto-experiencia h3 {
-            color: var(--color-principal);
-            font-weight: 500;
-            font-size: 1.5em;
-        }
-
-        /* Servicios/Materias */
+        /* Servicios */
         #servicios ul {
             list-style: none;
             padding: 0;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
 
         #servicios li {
             background-color: var(--color-fondo);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            width: 45%; /* Adaptable */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        /* Contacto */
+        #contacto form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
             border: 1px solid #ddd;
             border-radius: 8px;
-            padding: 25px;
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        #servicios li:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
         }
 
-        #servicios h3 {
-            color: var(--color-acento);
-            margin-top: 0;
+        #contacto label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
         }
 
-        /* Footer y Contacto (Manteniendo un minimalismo) */
-        footer {
-            background-color: var(--color-acento);
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            font-size: 0.9em;
-        }
-        
-        footer a {
-            color: var(--color-principal);
-            text-decoration: none;
-        }
-        
-        /* Formulario - Estilo simple y limpio */
-        #contacto form {
-            max-width: 500px;
-            margin: auto;
-            display: grid;
-            gap: 15px;
-        }
-        
-        #contacto input, #contacto select, #contacto textarea {
-            padding: 12px;
-            border: 1px solid #ddd;
+        #contacto input[type="text"], 
+        #contacto input[type="email"], 
+        #contacto select,
+        #contacto textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
             border-radius: 4px;
-            font-size: 1em;
-            transition: border-color 0.3s;
+            box-sizing: border-box;
         }
-        
-        #contacto input:focus, #contacto select:focus, #contacto textarea:focus {
-            border-color: var(--color-principal);
-            outline: none;
-        }
-        
+
         #contacto button {
             background-color: var(--color-principal);
             color: white;
             padding: 12px 20px;
             border: none;
-            border-radius: 50px;
+            border-radius: 4px;
             cursor: pointer;
+            margin-top: 20px;
             font-size: 1.1em;
+        }
+
+        footer {
+            background-color: var(--color-principal);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 5px 0;
         }
     </style>
 </head>
@@ -208,9 +159,10 @@
     <header>
         <div class="container">
             <nav>
-                <a href="#experiencia">Conóceme</a>
-                <a href="#servicios">Materias</a>
-                <a href="#metodologia">Clases</a>
+                <a href="#hero">Inicio</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#metodologia">Metodología</a>
                 <a href="#contacto">Contacto</a>
             </nav>
         </div>
@@ -218,105 +170,101 @@
 
     <section id="hero">
         <div class="container">
-            <h1>Preparación de Ingreso a Ingeniería 🚀</h1>
-            <h2>¡Asegura tu lugar! Clases de apoyo con Facundo, estudiante avanzado (22 años).</h2>
-            <p>Dominá la Matemática, Física e Introducción a la Ingeniería que necesitas para empezar con éxito.</p>
-            <a href="#contacto" class="cta-button">Empezar a Estudiar Hoy</a>
+            <h1>Tutoría Ingreso a carreras de ingenieria 💡</h1>
+            <h2>Domina Circuitos, Electrónica de Potencia y Sistemas de Control. Nivel Universitario</h2>
+            <p>Clases personalizadas por un estudiante avanzado de quinto año.</p>
+            <a href="#contacto" class="cta-button">¡Comienza a Dominar el conocimiento Hoy!</a>
         </div>
     </section>
 
     <section id="experiencia" class="container">
-        <div class="foto-estudio">
-            <img src="ruta/a/imagen-estudiante-concentrado.jpg" alt="Joven estudiando para el ingreso universitario">
-        </div>
-        
-        <div class="texto-experiencia">
-            <h2>El Apoyo que Necesitas, de Alguien que Entiende</h2>
-            <p>Hola, soy **Facundo**, tengo 22 años y soy estudiante avanzado de 5to año de Ingeniería Eléctrica. Sé exactamente por lo que estás pasando: las dudas, la presión del examen y la sensación de que la universidad es un mundo aparte.</p>
-            
-            <h3>Mi Propuesta de Valor:</h3>
-            <p>Mi ventaja es que no te enseñaré solo teoría; te enseñaré las **claves para aprobar el ingreso** que aprendí estando en tu lugar, usando un lenguaje simple, fresco y con cero formalismos abrumadores. Fui alumno de ingreso hace poco, y sé dónde se traban los ejercicios.</p>
-            
-            <ul>
-                <li>✅ **Soy estudiante:** Mis métodos son actualizados y centrados en la eficiencia.</li>
-                <li>✅ **Experiencia como Tutor:** Llevo 2 años ayudando a compañeros a ingresar con éxito.</li>
-                <li>✅ **Foco 100% en el Ingreso:** Matemática, Física y Química de Nivelación.</li>
-            </ul>
+        <h2>Mi experiencia como estudiante de Ingenieria electrica</h2>
+        <div style="display: flex; gap: 30px; align-items: center;">
+            <div style="flex: 1;">
+                <img src="ruta/a/tu/foto-profesional.jpg" alt="Foto del Tutor/Profesor de Ingeniería Eléctrica" style="width: 100%; max-width: 250px; border-radius: 50%; display: block; margin: auto;">
+            </div>
+            <div style="flex: 3; text-align: left;">
+                <p>Hola como estas soy Cristian Facundo Barrojo Lopez tengo 22 años y estudiante avanzado de Ingenieria Eléctrica en quinto año. Mi misión es cerrar la brecha entre la teoría compleja y la aplicación práctica.</p>
+                <p>actualmente estoy trabajando como tutor con los chicos del ingreso y a la vez que termino mi cursado de estudios .</p>
+                <ul>
+                    <li>✅Materias de interes: en circuitos electricos 1 y 2, analisis 1 y 2, fundamentos de señales, maquinas electricas, Matematicas, fisica y quimica de nivel preuniversiario.</li>
+                    <li>✅ **Experiencia con Herramientas:** MATLAB/Simulink, AUTOCAD, Python, Visual Studio, PowerBi, Office, PVsyst v8, WindPro, JavaScrypt, PowerWorld .</li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section id="servicios" class="container">
-        <h2>Materias Clave para el Ingreso (Ingeniería y Ciencias Exactas)</h2>
+        <h2>Áreas de Tutoría </h2>
         <ul>
             <li>
-                <h3>Matemática de Nivelación</h3>
-                <p>Funciones, Álgebra, Geometría Analítica y Trigonometría. Cimentamos las bases.</p>
+                <h3>Nivel Universitario Básico</h3>
+                <p>Circuitos I & II (AC/DC), Electromagnetismo, Análisis de Señales, Analisis matematico y fisica 1 y 2.</p>
             </li>
             <li>
-                <h3>Física Introductoria</h3>
-                <p>Cinemática, Dinámica, Estática, Hidrostática y Termodinámica básica. Enfocado en la resolución de problemas.</p>
-            </li>
-            <li>
-                <h3>Química General (Opcional)</h3>
-                <p>Estructura atómica, Nomenclatura, Estequiometría y Reacciones. Dependiendo de la universidad.</p>
-            </li>
-            <li>
-                <h3>Técnicas de Estudio</h3>
-                <p>Organización de tiempo, apuntes efectivos y manejo de ansiedad pre-examen. ¡Aprende a estudiar!</p>
+                <h3>Nivel Avanzado / Posgrado</h3>
+                <p>Mquinas electricas, Sistemas de Control, Maquinas termicas.</p>
             </li>
         </ul>
-    </section>
+        </section>
     
     <section id="metodologia" class="container" style="background-color: var(--color-fondo);">
-        <h2>Clases Claras y Directas</h2>
-        <div style="display: flex; justify-content: space-around; text-align: center; gap: 20px;">
+        <h2>Mi Enfoque: De la Teoría a la Maestría</h2>
+        <div style="display: flex; justify-content: space-around; text-align: center;">
             <div>
-                <h3>1. ¡Vamos al Grano!</h3>
-                <p>Explicaciones rápidas y ejercicios clave. Olvídate del relleno.</p>
+                <h3>1. Diagnóstico Personalizado</h3>
+                <p>Identificamos tus lagunas de conocimiento. No hay 'talla única'.</p>
             </div>
             <div>
-                <h3>2. Horarios Flexibles</h3>
-                <p>Nos adaptamos a tu ritmo y a tu fecha de examen.</p>
+                <h3>2. Sesiones Orientadas a Problemas</h3>
+                <p>Enfoque en la resolución de problemas de examen y proyectos de la vida real.</p>
             </div>
             <div>
-                <h3>3. Repaso Constante</h3>
-                <p>Evaluaciones cortas al inicio de cada clase para consolidar el aprendizaje.</p>
+                <h3>3. Soporte y Materiales</h3>
+                <p>Acceso a notas, simulaciones y grabaciones de las sesiones para repaso.</p>
             </div>
         </div>
     </section>
 
     <section id="contacto" class="container">
-        <h2>¡No pierdas tiempo! Empezá tu preparación</h2>
+        <h2>Reserva tu Consulta Inicial</h2>
         <form action="URL_DE_TU_SERVICIO_DE_FORMULARIO" method="POST">
-            <input type="text" id="nombre" name="nombre" placeholder="Nombre Completo" required>
-            <input type="email" id="email" name="email" placeholder="Email (Para auto-respuesta)" required>
-            <input type="text" id="telefono" name="telefono" placeholder="WhatsApp (Ej: +54 9 11 1234 5678)" required>
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-            <select id="materia" name="materia" required>
-                <option value="">Selecciona la Materia Principal</option>
-                <option value="matematica">Matemática de Ingreso</option>
-                <option value="fisica">Física Introductoria</option>
-                <option value="quimica">Química General</option>
-                <option value="combinado">Pack Combinado (Varias Materias)</option>
+            <label for="email">Email: facundoba2scxlvry@gmail.com</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="nivel">Nivel de Estudio:</label>
+            <select id="nivel" name="nivel" required>
+                <option value="">Selecciona tu Nivel</option>
+                <option value="universitario-basico">Universitario (1er-2do año)</option>
+                <option value="universitario-avanzado">Universitario (3er año en adelante)</option>
+        
             </select>
 
-            <textarea id="mensaje" name="mensaje" rows="3" placeholder="Contame: ¿Cuándo es tu examen de ingreso y cuáles son tus mayores dudas?"></textarea>
+            <label for="materia">Materia Específica / Tema:</label>
+            <input type="text" id="materia" name="materia" placeholder="Ej: Electrónica de Potencia - Inversores" required>
+
+            <label for="mensaje">Tu Pregunta / Mensaje (Urgencia):</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Indica si tienes examen pronto o si es un proyecto a largo plazo."></textarea>
             
-            <button type="submit">Enviar Mensaje a Facundo</button>
+            <button type="submit">Enviar Solicitud de Tutoría</button>
         </form>
 
         <p style="text-align: center; margin-top: 30px;">
-            **Si prefieres, agenda una charla rápida de 15 minutos:**
-            <a href="URL_DE_TU_CALENDLY" target="_blank" class="cta-button" style="background-color: var(--color-acento);">Reservar Charla Gratis 💬</a>
+            **O agenda directamente una consulta rápida:**
+            <a href="URL_DE_TU_CALENDLY" target="_blank" class="cta-button" style="background-color: var(--color-principal); padding: 10px 20px;">Reservar en Calendario 🗓️</a>
         </p>
 
     </section>
 
     <footer>
-        <p><strong>Facundo | Tutorías de Ingreso Universitario</strong></p>
-        <p><strong>Ubicación (Clases Virtuales):</strong> Zona de [Tu Universidad Ficticia], ¡Clases disponibles Online!</p>
-        <p><strong>Contacto Rápido:</strong> <a href="mailto:facundo.tutor.ingreso@ficticio.com" style="color: var(--color-principal);">facundo.tutor.ingreso@ficticio.com</a> | Celular: +54 9 11 1234 5678</p>
-        <p>&copy; 2024. Preparación para el éxito universitario.</p>
+        <p><strong>[Tu Nombre y Apellido]</strong> | Tutoría de Ingeniería Eléctrica</p>
+        <p><strong>Contacto Principal:</strong> <a href="mailto:tutor.ingenieria.electrica@ficticio.com" style="color: white;">tutor.ingenieria.electrica@ficticio.com</a></p>
+        <p><strong>Ubicación Base (Clases Online Globales):</strong> Buenos Aires, Argentina (Zona Horaria GMT-3)</p>
+        <p><strong>Celular (WhatsApp/Telegram):</strong> +54 9 11 1234 5678 (Horario de atención: 9h - 18h)</p>
+        <p>&copy; 2024. Todos los derechos reservados.</p>
     </footer>
 
 </body>
