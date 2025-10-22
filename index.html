@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoría Experta | Ingeniería Eléctrica Avanzada</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <style>
+        :root {
+            --color-principal: #004AAD; /* Azul serio */
+            --color-acento: #FF7F50; /* Naranja para CTA */
+            --color-fondo: #f4f4f9;
+            --color-texto: #333;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--color-texto);
+            background-color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--color-principal);
+            color: white;
+            padding: 1rem 5%;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px 0;
+        }
+
+        section {
+            padding: 40px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--color-principal);
+            margin-bottom: 30px;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: linear-gradient(rgba(0, 74, 173, 0.8), rgba(0, 74, 173, 0.8)), url('ruta/a/tu/imagen-fondo-ingenieria.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        #hero h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--color-acento);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: #e56b40;
+        }
+
+        /* Servicios */
+        #servicios ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        #servicios li {
+            background-color: var(--color-fondo);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            width: 45%; /* Adaptable */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        /* Contacto */
+        #contacto form {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        #contacto label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        #contacto input[type="text"], 
+        #contacto input[type="email"], 
+        #contacto select,
+        #contacto textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        #contacto button {
+            background-color: var(--color-principal);
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+
+        footer {
+            background-color: var(--color-principal);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#hero">Inicio</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#metodologia">Metodología</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Tutoría Experta en Ingeniería Eléctrica 💡</h1>
+            <h2>Domina Circuitos, Electrónica de Potencia y Sistemas de Control. Nivel Universitario y Posgrado.</h2>
+            <p>Clases personalizadas por un profesional con experiencia real en el sector.</p>
+            <a href="#contacto" class="cta-button">¡Comienza a Dominar la Eléctrica Hoy!</a>
+        </div>
+    </section>
+
+    <section id="experiencia" class="container">
+        <h2>Mi Autoridad y Experiencia</h2>
+        <div style="display: flex; gap: 30px; align-items: center;">
+            <div style="flex: 1;">
+                <img src="ruta/a/tu/foto-profesional.jpg" alt="Foto del Tutor/Profesor de Ingeniería Eléctrica" style="width: 100%; max-width: 250px; border-radius: 50%; display: block; margin: auto;">
+            </div>
+            <div style="flex: 3; text-align: left;">
+                <p>Soy el **Dr. [Tu Nombre y Apellido]**, Ingeniero Eléctrico con un **Máster/Doctorado** en [Área de Especialización]. Mi misión es cerrar la brecha entre la teoría compleja y la aplicación práctica.</p>
+                <p>He trabajado [X] años en el sector de [Energías Renovables/Sistemas de Potencia/Automatización] y [Y] años como docente universitario, asegurando que mis alumnos no solo aprueben, sino que realmente *comprendan* la materia.</p>
+                <ul>
+                    <li>✅ **Especialista en:** Teoría de Control, Máquinas Eléctricas, Análisis de Sistemas de Potencia.</li>
+                    <li>✅ **Experiencia con Herramientas:** MATLAB/Simulink, PSCAD, ETAP.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="container">
+        <h2>Áreas de Tutoría y Especialización</h2>
+        <ul>
+            <li>
+                <h3>Nivel Universitario Básico</h3>
+                <p>Circuitos I & II (AC/DC), Electromagnetismo, Análisis de Señales, Fundamentos de Electrónica.</p>
+            </li>
+            <li>
+                <h3>Nivel Avanzado / Posgrado</h3>
+                <p>Electrónica de Potencia, Teoría de Control Clásico y Moderno, Sistemas de Energía Renovables, Microgrids.</p>
+            </li>
+        </ul>
+        </section>
+    
+    <section id="metodologia" class="container" style="background-color: var(--color-fondo);">
+        <h2>Mi Enfoque: De la Teoría a la Maestría</h2>
+        <div style="display: flex; justify-content: space-around; text-align: center;">
+            <div>
+                <h3>1. Diagnóstico Personalizado</h3>
+                <p>Identificamos tus lagunas de conocimiento. No hay 'talla única'.</p>
+            </div>
+            <div>
+                <h3>2. Sesiones Orientadas a Problemas</h3>
+                <p>Enfoque en la resolución de problemas de examen y proyectos de la vida real.</p>
+            </div>
+            <div>
+                <h3>3. Soporte y Materiales</h3>
+                <p>Acceso a notas, simulaciones y grabaciones de las sesiones para repaso.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="container">
+        <h2>Reserva tu Consulta Inicial</h2>
+        <form action="URL_DE_TU_SERVICIO_DE_FORMULARIO" method="POST">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="nivel">Nivel de Estudio:</label>
+            <select id="nivel" name="nivel" required>
+                <option value="">Selecciona tu Nivel</option>
+                <option value="universitario-basico">Universitario (1er-2do año)</option>
+                <option value="universitario-avanzado">Universitario (3er año en adelante)</option>
+                <option value="posgrado">Posgrado/Especialización</option>
+            </select>
+
+            <label for="materia">Materia Específica / Tema:</label>
+            <input type="text" id="materia" name="materia" placeholder="Ej: Electrónica de Potencia - Inversores" required>
+
+            <label for="mensaje">Tu Pregunta / Mensaje (Urgencia):</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Indica si tienes examen pronto o si es un proyecto a largo plazo."></textarea>
+            
+            <button type="submit">Enviar Solicitud de Tutoría</button>
+        </form>
+
+        <p style="text-align: center; margin-top: 30px;">
+            **O agenda directamente una consulta rápida:**
+            <a href="URL_DE_TU_CALENDLY" target="_blank" class="cta-button" style="background-color: var(--color-principal); padding: 10px 20px;">Reservar en Calendario 🗓️</a>
+        </p>
+
+    </section>
+
+    <footer>
+        <p><strong>[Tu Nombre y Apellido]</strong> | Tutoría de Ingeniería Eléctrica</p>
+        <p><strong>Contacto Principal:</strong> <a href="mailto:tutor.ingenieria.electrica@ficticio.com" style="color: white;">tutor.ingenieria.electrica@ficticio.com</a></p>
+        <p><strong>Ubicación Base (Clases Online Globales):</strong> Buenos Aires, Argentina (Zona Horaria GMT-3)</p>
+        <p><strong>Celular (WhatsApp/Telegram):</strong> +54 9 11 1234 5678 (Horario de atención: 9h - 18h)</p>
+        <p>&copy; 2024. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
